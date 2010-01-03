@@ -1,3 +1,4 @@
+#fix NA value lines in cimishourly
 cimishourly = function(station, units = "imp")
 {
   dir = c(imp = "ftp://ftpcimis.water.ca.gov/pub/hourly/",
