@@ -9,7 +9,7 @@ cimismonthly(station, month, period = "daily", units = "imp", keepfile = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{station}{station ID. See \code{\link{stnlist}}}
+  \item{station}{station ID. See \code{\link{getStnList}}}
   \item{month}{month, in quotes. All lower case, of the form jan, feb,
     mar, ...}
   \item{period}{either "daily" or "hourly". Defaults to "daily".}

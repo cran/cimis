@@ -3,7 +3,11 @@ mcimishourly <- function(stationlist, label = "none") {
   if(label %in% c("none", "station", "name") == 0) {
     stop("Invalid 'add' parameter. Leave as default of see ?mcimishourly")
   }
+  if(is.numeric(stationlist)){
+    stationlist <- sprintf("%03i", stationlist)
+  }
 
+  
   #remove redundant stations
   stationlist <- unique(stationlist)
   
@@ -23,9 +27,9 @@ mcimishourly <- function(stationlist, label = "none") {
     wout$station <- as.factor(c(mapply(rep, names(w), elen)))
     
   } else if(label == "name") {
-    data(stnlist)
+    sl = getStnList()
     wout$station <- as.factor(c(mapply(rep,
-                stnlist$name[stnlist$station %in% stationlist], elen)))
+                sl$Name[sl$Station %in% stationlist], elen)))
     
   } 
   return(wout)
@@ -37,7 +41,10 @@ mcimisannual <- function(stationlist, yearlist, label = "none", ...) {
   if(label %in% c("none", "station", "name") == 0) {
     stop("Invalid 'add' parameter. Leave as default of see ?mcimishourly")
   }
-  
+
+  if(is.numeric(stationlist))
+    stationlist <- sprintf("%03i", stationlist)
+
   n <- length(stationlist)
   m <- length(yearlist)
 
@@ -55,8 +62,8 @@ mcimisannual <- function(stationlist, yearlist, label = "none", ...) {
       
     } else if(label == "name") {
 
-      data(stnlist)
-      w$station <- stnlist$name[stnlist$station == station]
+      sl = getStnList()
+      w$station <- sl$Name[sl$Station == station]
       return(w)
     }
 

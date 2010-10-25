@@ -9,7 +9,7 @@ cimisdaily(station, units = "imp")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{station}{station ID, in quotes. See \code{\link{stnlist}}}
+  \item{station}{station ID, in quotes. See \code{\link{getStnList}}}
   \item{units}{either "imp" for imperial units or "SI" for SI
     units. Defaults to "imp"}
 }

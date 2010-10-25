@@ -1,0 +1,17 @@
+0.1-2
+	fix a typo in the example for cimismonthly
+	fix T and F to TRUE and FALSE
+
+0.1-3
+	strip leading whitespace in stnlist names
+	added multi.R providing functionality for multiple stations/years.
+
+0.1-4
+	add sprintf("%03i, station) to allow integer entry for station number
+
+0.1-5
+	replace stnlist dataset with getStnList(), a function to pull it from
+	CIMIS
+
+
+	

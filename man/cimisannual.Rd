@@ -10,7 +10,7 @@ cimisannual(station, year, period = "daily", units = "imp", keepfile = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{station}{station ID. See \code{\link{stnlist}}}
+  \item{station}{station ID. See \code{\link{getStnList}}}
   \item{year}{year, in quotes}
   \item{period}{either "daily" or "hourly". Defaults to "daily".}
   \item{units}{either "imp" for imperial or "SI" for SI. For this
