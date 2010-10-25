@@ -33,6 +33,6 @@ Greg Hirson <ghirson@ucdavis.edu>
 \code{\link{cimishourly}}
 }
 \examples{
-w <- mcimishourly(c('006', '077'), label='name')
+\dontrun{w <- mcimishourly(c('006', '077'), label='name')
 head(w)
-}
+}}

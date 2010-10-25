@@ -41,7 +41,7 @@ parsing. \url{http://casoilresource.lawr.ucdavis.edu/drupal/node/38},
 
 \examples{
 #Maximum daily temperature for Davis, CA, 2005
-weather = cimisannual(station = "006", year = "2005", keepfile = FALSE)
+\dontrun{weather = cimisannual(station = "006", year = "2005", keepfile = FALSE)
 plot(weather$max_air, type = "l", xlab = "Day of Year",
    ylab = "Max. Air Temp, F", main = "Davis, CA, 2005")
-}
+}}

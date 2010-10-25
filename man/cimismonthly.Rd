@@ -41,9 +41,9 @@ parsing. \url{http://casoilresource.lawr.ucdavis.edu/drupal/node/38},
 
 \examples{
 ##Feburary dew point in Davis, CA
-weather = cimismonthly(station = "006", month = "feb", period = "daily",
+\dontrun{weather = cimismonthly(station = "006", month = "feb", period = "daily",
    keepfile = FALSE)
 plot(dew_pt~datetime, data= weather, pch = 19, type = "o",
    xlab = "Date", ylab = "Dew Point, F",
    main = "February dew point, Davis, CA")
-}
+}}

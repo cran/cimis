@@ -13,5 +13,6 @@
 	replace stnlist dataset with getStnList(), a function to pull it from
 	CIMIS
 
-
-	
+0.1-6
+	added donotrun to examples on annual data
+	added stninfo() function to get geographical data on station

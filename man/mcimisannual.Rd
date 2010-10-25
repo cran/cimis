@@ -43,10 +43,10 @@ Greg Hirson <ghirson@ucdavis.edu>
 \seealso{
 \code{\link{cimisannual}}
 }
-\examples{
+\examples{\dontrun{
 w <- mcimisannual(station = c("006", "077"), year = 2000:2002,
          label = "name")
 
 head(w)
 tail(w)
-}
+}}
