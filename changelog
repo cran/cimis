@@ -16,3 +16,8 @@
 0.1-6
 	added donotrun to examples on annual data
 	added stninfo() function to get geographical data on station
+
+0.1-7
+	fixed mcimishourly, mcimisannual to order the stations in the same 
+	  order as the data, not alphabetical
+	added a dontrun to cimisdaily.Rd

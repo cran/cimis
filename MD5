@@ -1,0 +1,16 @@
+dec7ef4fa4e87112034f1bd4479e24cb *DESCRIPTION
+69f22b714b0a1a7467e71591215c9224 *NAMESPACE
+4f6dd17ffc1b37ecf5b1c438a6e27800 *R/cimis2.R
+3d22c542d2394217f39d21ba05dd3a51 *R/getStnList.R
+e06ceed32d16220d5133a77373aab95b *R/multicimis.R
+48a51c14b28cd8ac7ade88c6a711318f *R/stninfo.R
+c75ce3a3e499933a3b769cffc9f41e06 *changelog
+6f125c2969c65377a7b61c9a35e7de72 *man/cimisannual.Rd
+509648bf0d84b9cbbc5eec1f6f0a75b2 *man/cimisdaily.Rd
+7b9d45b7e250340ba1ff149b816454a2 *man/cimishourly.Rd
+63c9e082904992d1e61a16ee0c75d8a4 *man/cimismonthly.Rd
+b34a1cf144039b2532c0330ace52be2b *man/getStnList.Rd
+1897b3778f2127dcb7879d4a4894f882 *man/mcimisannual.Rd
+d0084ea6f66b4f0038a860e837b95d88 *man/mcimishourly.Rd
+77526a0b021f76e91abf3fc1b6184daf *man/stninfo.Rd
+b153df8f2570dd358f5b3dcc1eb5a5ec *stnlist.rda.ignore.rda

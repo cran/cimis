@@ -14,6 +14,8 @@ mcimishourly <- function(stationlist, label = "none") {
   if(length(stationlist) == 1) {
     return(cimishourly(stationlist))
   }
+  #presort
+  stationlist = sort(stationlist)
 
   w <- lapply(stationlist, cimishourly)
   names(w) <- stationlist
@@ -28,9 +30,10 @@ mcimishourly <- function(stationlist, label = "none") {
     
   } else if(label == "name") {
     sl = getStnList()
-    wout$station <- as.factor(c(mapply(rep,
-                sl$Name[sl$Station %in% stationlist], elen)))
-    
+    wout$station <- as.factor(c(mapply(rep, sl$Name[sl$Station %in% 
+            stationlist], elen)))
+
+
   } 
   return(wout)
 }
@@ -44,6 +47,9 @@ mcimisannual <- function(stationlist, yearlist, label = "none", ...) {
 
   if(is.numeric(stationlist))
     stationlist <- sprintf("%03i", stationlist)
+
+  #presort
+  stationlist = sort(stationlist)
 
   n <- length(stationlist)
   m <- length(yearlist)
@@ -63,7 +69,7 @@ mcimisannual <- function(stationlist, yearlist, label = "none", ...) {
     } else if(label == "name") {
 
       sl = getStnList()
-      w$station <- sl$Name[sl$Station == station]
+      w$station <- factor(sl$Name[sl$Station == station])
       return(w)
     }
 

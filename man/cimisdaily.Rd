@@ -33,10 +33,10 @@ parsing. \url{http://casoilresource.lawr.ucdavis.edu/drupal/node/38},
 \seealso{\code{\link{cimisannual}}, \code{\link{cimismonthly}}, \code{\link{cimishourly}}}
 
 \examples{
-#Average soil temperature for last 7 days in Davis, CA
+\dontrun{#Average soil temperature for last 7 days in Davis, CA
 weather = cimisdaily("006")
 plot(soil_avg ~ julian_day, data = weather, pch = 19,
    xlab = "Julian Day", ylab = "Avg. Soil Temp, F",
    main = "Recent soil temperature in Davis, CA")
-
+}
 }
